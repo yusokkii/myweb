@@ -11,7 +11,7 @@
     
     section{
         position: absolute;
-        height: 4380px;
+        height: 4600px;
     width: 1519px;
     min-height: 100vh;
     display: flex;
@@ -196,7 +196,7 @@ bottom: 10px;
                             height: 450px;
                             left: 1000px;
                            
-                            top: 950px;
+                            top: 1000px;
                             bottom: 10px;
                             object-fit: cover; 
                         transition: 0.5s;
@@ -212,7 +212,7 @@ bottom: 10px;
                             height: 450px;
                             left: 550px;
                             right: 24px;
-                            top: 950px;
+                            top: 1000px;
                             bottom: 10px;
                             object-fit: cover; 
                         transition: 0.5s;
@@ -227,7 +227,7 @@ bottom: 10px;
                             height: 450px;
                             left: 100px;
                             right: 24px;
-                            top: 1050px;
+                            top: 1000px;
                             bottom: 10px;
                             object-fit: cover; 
                         transition: 0.5s;
@@ -763,7 +763,7 @@ transform: scale(1.1);
                     height: 80px;
                     left: 200px;
                     right: 10px;
-                    top: 3950px;
+                    top: 4000px;
                     bottom: 10px;
                     color: rgb(0, 0, 0);
                     font-family: Roboto;
@@ -776,7 +776,7 @@ transform: scale(1.1);
                     height: 80px;
                     left: 200px;
                     right: 10px;
-                    top: 4000px;
+                    top: 4050px;
                     bottom: 10px;
                     color: rgb(0, 0, 0);
                     font-family: Roboto;
@@ -797,7 +797,7 @@ transform: scale(1.1);
                 .icon{
                     position: absolute;
                     left: 200px; 
-                    top: 4050px; /* Початкова позиція з верху */
+                    top: 4100px; /* Початкова позиція з верху */
                     width: auto; /* Ширина автоматично розраховується між left і right */
                     height: 80px;
                     color: rgb(0, 0, 0);
@@ -821,7 +821,7 @@ transform: scale(1.1);
                 }
                 .privat {
                     position: absolute;
-                    top: 4230px;
+                    top: 4450px;
                     left: 100px;
                     right: 10px;
                     display: grid;
@@ -863,3 +863,9 @@ transform: scale(1.1);
     line-height: 80px;
     text-align: right;
 }                
+
+.map {
+    position: absolute;
+    top: 4000px;
+    left: 800px;
+}
