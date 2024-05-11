@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     }
-
+body{
+    align-items: center;
+}
     html {
         scroll-behavior: smooth;
     }
@@ -655,7 +657,7 @@ text-align: center
 .card1:hover img{
 transform: scale(1.1);
 }
-.Shop #shop{
+.Shop #Gallery{
     position: absolute;
     top: 3050px;
     width: calc(100% - 20px); /* Зменшіть ширину на 20px, враховуючи left */
@@ -669,86 +671,13 @@ transform: scale(1.1);
     letter-spacing: 0%;
     text-align: center;
 }
-.card-group {
-    position: absolute;
-    height: 80px;
-    left: 200px;
-    top: 3150px;
-    bottom: 10px;
-    display: flex;
-    gap: 150px;
-    }
 
-    .card {
-        width: 300px;
-        height: 300px;
-        border-radius: 5px;
-        overflow: hidden;
-        position: relative;
-        transition: 0.5s;
-        cursor: pointer;
-        }
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            pointer-events: none;
-            transition: 0.5s;
-            
-            }
-            .card .layer {
-                background: linear-gradient(to top, rgb(255, 255, 255), rgba(79, 77, 77, 0));
-                position: absolute;
-                bottom:0;
-                width: 100%;
-                height: 50%;
-                opacity: 0;
-                transition: 0.3s;
-                
-                }
-                .card .info {
-                    position: absolute;
-                    bottom: 0;
-                    padding: 15px;
-                    opacity: 0;
-                    transition: 0.5s bottom, 1.75s opacity;
-                }
-                .info h1{
-                    font-size: 20px;
-                    font-family: Roboto;
-                }
-                .info p {
-                    font-family: Roboto;
-                    font-size: 14px;
-                    margin-top: 5px;
-                    }
-                    .card:hover,
-.card:hover img,
-.card:hover layer {
-transform: scale(1.1);
-}
-.card:hover > .layer {
-    opacity: 1;
-    }
-    .card:hover > .info {
-        bottom: 0;
-        opacity: 1;
-        }
-        .card-group1 {
-            position: absolute;
-            left: 200px;
-            height: 80px;
-            top: 3500px;
-            bottom: 10px;
-            display: flex;
-            gap: 150px;
-                }
                 .cont #contact{
                     position: absolute;
                     height: 80px;
                     width: calc(100% - 20px); /* Зменшіть ширину на 20px, враховуючи left */
                     left: 10px; /* Лівий відступ */
-                    top: 3900px;
+                    top: 3850px;
                     bottom: 10px;
                     color: rgb(0, 0, 0);
                     font-family: Roboto;
@@ -785,35 +714,25 @@ transform: scale(1.1);
                     letter-spacing: 0%;
                 }       
                 
-                .icon h2{
-                    position: absolute;
-                    height: 80px;
-                    top: 20px;
-                    bottom: 10px;
-                    color: rgb(0, 0, 0);
-                    font-family: Roboto;
-                    font-size: 30px;
-                }
                 .icon{
                     position: absolute;
-                    left: 200px; 
-                    top: 4100px; /* Початкова позиція з верху */
-                    width: auto; /* Ширина автоматично розраховується між left і right */
-                    height: 80px;
-                    color: rgb(0, 0, 0);
-                    font-family: Roboto;
-                    font-size: 20px;
-                    line-height: 80px;
+                    top: 625px;
+                    left: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
                 }
                 .icon a{
+                    position: relative;
                     display:inline-block;
-                    color: #000000;
+                    color: #42403b;
                     font-size: 35px;
                     transform: 0.5s;
                     transition-property: transform;
                 }
                 .icon a:not(:last-child){
-                    margin-top: 60px;
+                    margin-right: 30px;
                 }
                 
                 .icon a:hover{
@@ -866,6 +785,119 @@ transform: scale(1.1);
 
 .map {
     position: absolute;
-    top: 4000px;
-    left: 800px;
+    top: 3970px;
+    left: 160px;
 }
+.conteiner{
+    position: absolute;
+    top: 3830px;
+    right: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.title h2{
+font-weight: 600;
+color: rgb(0, 0, 0);
+font-size: 40px;
+margin-top: 5px;
+}
+.conta{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #54635b;
+    border-radius: 50px;
+}
+.cont textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.conta:focus{
+ border: 2px solid #495459;
+}
+.conta::placeholder{
+    color: #54635b;
+}
+.cont button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #d5bb97, #89765f);
+    cursor: pointer;
+}
+form{
+    background: rgba(121, 108, 93, 0.4);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.slider-wrapper .image-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+display: none;
+}
+.slider-wrapper .image-list .image-item{
+    width: 450px;
+    height:600px;
+    object-fit: cover;
+}
+.slid{
+    position: absolute;
+    top: 3200px;
+max-width: 1200px;
+width: 95%;
+}
+
+.slider-wrapper .slider-button{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrapper .slider-button:hover{
+    background: #54635b;
+}
+.slider-wrapper .slider-button#pr-slider{
+left: -20px;
+display: none;
+}
+.slider-wrapper .slider-button#nx-slider{
+    right: -20px;
+    }
+    .slider-wrapper {
+        position: relative;
+    }
